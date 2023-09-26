@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<html id="html">
+
+<head>
+	<title>Kayla Carlson Photography</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+	<div id="header">
+		<div class="top">
+			<!-- <div id="logo">
+				<h4 class="title">Kayla Carlson Photography</h4>
+			</div> -->
+			<img src="images/logo2.jpeg" width="100%" />
+			<hr style="margin: 0px 20px;" />
+			<nav id="nav">
+				<ul>
+					<li><a href="#top" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
+					<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a>
+					</li>
+					<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+					<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="bottom">
+			<ul class="icons">
+				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="gallery-container">
+		<button id="close-button" onclick="closeAlert()">X</button>
+		<button class="prev-button" onclick="changeImage(-1)">&#x3C;</button>
+		<button class="next-button" onclick="changeImage(1)">&#x3E;</button>
+		<div class="main-image-container">
+			<img class="main-image" src="image1.PNG" alt="Image 1">
+		</div>
+		<!-- <div class="filter-container">
+			<div class="filter-button">All</div>
+			<div class="filter-button">Wedding</div>
+			<div class="filter-button">Senior</div>
+		</div> -->
+		<div class="preview-container">
+			<img class="preview" src="images/image2.jpeg" alt="Image 1">
+			<img class="preview" src="images/image3.jpeg" alt="Image 1">
+			<img class="preview" src="images/image2.jpeg" alt="Image 1">
+			<img class="preview" src="images/image1.jpeg" alt="Image 1">
+			<img class="preview" src="images/image2.jpeg" alt="Image 1">
+			<img class="preview" src="images/image2.jpeg" alt="Image 1">
+			<img class="preview" src="images/image2.jpeg" alt="Image 1">
+			<img class="preview" src="images/image2.jpeg" alt="Image 1">
+			<img class="preview" src="images/image2.jpeg" alt="Image 1">
+			<img class="preview" src="images/image2.jpeg" alt="Image 1">
+			<img class="preview" src="images/image2.jpeg" alt="Image 1">
+			<img class="preview" src="images/image2.jpeg" alt="Image 1">
+			<img class="preview" src="images/image2.jpeg" alt="Image 1">
+			<img class="preview" src="images/image2.jpeg" alt="Image 1">
+			<img class="preview" src="images/image2.jpeg" alt="Image 1">
+			<img class="preview" src="images/image2.jpeg" alt="Image 1">
+			<img class="preview" src="images/image2.jpeg" alt="Image 1">
+			<img class="preview" src="images/image2.jpeg" alt="Image 1">
+			<img class="preview" src="images/image2.jpeg" alt="Image 1">
+			<img class="preview" src="images/image2.jpeg" alt="Image 1">
+		</div>
+	</div>
+	<div id="main">
+		<!--
+			Image Gallery: default display: none;
+		-->
+		<div id="top">
+			<div class="slideshow-container">
+				<div class="mySlides fade slide1" style="height:100vh">
+				</div>
+				<div class="mySlides fade slide2" style="height:100vh">
+				</div>
+				<!-- <div class="mySlides fade">
+					<img src="images/image.PNG" style="height:100vh">
+				</div> -->
+			</div>
+			<div class="header-text">
+				<h2 class="alt">Cheesy quote here ? Lorem ispum something</h2><br />
+				<h4>Kayla Carlson Photography</h4>
+				<span class="icon brands fa-instagram"></span><br />
+				<!-- <p>Ligula scelerisque justo sem accumsan diam quis<br />
+					vitae natoque dictum sollicitudin elementum.</p>
+				<a href="#portfolio" class="button scrolly">Magna Aliquam</a> -->
+			</div>
+		</div>
+		<section id="portfolio" class="two">
+			<div class="container">
+				<header class="fade-in">
+					<h2>Portfolio</h2>
+				</header>
+				<p class="fade-in">Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
+					egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
+					Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
+					fusce hendrerit lacus ridiculus.</p>
+				<div class="row">
+					<div class="col-4 col-12-mobile">
+						<article class="item">
+							<header>
+								<h3>Seniors</h3>
+							</header>
+							<a href="#" class="image fit"><img class="fade-in" src="images/image2.jpeg" alt="" /></a>
+						</article>
+						<article class="item">
+							<a href="#" class="image fit"><img class="fade-in" src="images/image3.jpeg" alt="" /></a>
+						</article>
+					</div>
+					<div class="col-4 col-12-mobile">
+						<article class="item">
+							<header>
+								<h3>Weddings</h3>
+							</header>
+							<a href="javascript:void(0)" onclick="openGallery();" class="image fit"><img class="fade-in"
+									src="images/image2.jpeg" alt="" /></a>
+						</article>
+						<article class="item">
+							<a href="#" class="image fit"><img class="fade-in" src="images/image3.jpeg" alt="" /></a>
+						</article>
+					</div>
+					<div class="col-4 col-12-mobile">
+						<article class="item">
+							<header>
+								<h3>Couples</h3>
+							</header>
+							<a href="#" class="image fit"><img class="fade-in" src="images/image3.jpeg" alt="" /></a>
+						</article>
+						<article class="item">
+							<a href="#" class="image fit"><img class="fade-in" src="images/image2.jpeg" alt="" /></a>
+						</article>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<section id="about" class="three">
+			<div class="container">
+				<header class="fade-in">
+					<h2>About Me</h2>
+				</header>
+				<a href="#" class="image featured"><img class="fade-in" src="images/pic08.jpg" alt="" /></a>
+				<div class="background-test">test</div>
+				<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
+					ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
+					laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
+					parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
+					dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
+					ornare iaculis.</p>
+			</div>
+		</section>
+		<section id="contact" class="four">
+			<div class="container">
+				<header>
+					<h2>Contact Me</h2>
+				</header>
+				<p>
+					<a href="#">kaylacarlsonphotography@gmail.com</a><br />
+					<a href="#">(402) 314-3258</a>
+				</p>
+				<p>Let me know what you are hoping to achieve and let's make it happen!</p>
+				<div id="form">
+					<form method="post" id="contact-form">
+						<div class="row">
+							<div class="col-6 col-12-mobile"><input type="text" required name="name" id="name"
+									placeholder="Name" />
+							</div>
+							<div class="col-6 col-12-mobile"><input type="text" required name="email" id="email"
+									placeholder="Email" /></div>
+							<div class="col-12">
+								<textarea name="message" id="message" required placeholder="Message"></textarea>
+							</div>
+							<div class="col-12">
+								<input type="submit" value="Send Message" />
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	</div>
+	<div id="footer">
+		<p>site powered by www.natecarlsonwebservice.com</p>
+	</div>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/slideshow.js"></script>
+	<script src="assets/js/gallery.js"></script>
+	<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init('AxNy4nzCU6XXWzZXc');
+		})();
+		window.onload = function () {
+			document.getElementById('contact-form').addEventListener('submit', function (event) {
+				event.preventDefault();
+				let params = {
+					name: document.getElementById("name").value,
+					email: document.getElementById("email").value,
+					message: document.getElementById("message").value
+				}
+				// these IDs from the previous steps
+				emailjs.sendForm('service_xqm5e8f', 'template_0ns5dui', this)
+					.then(function () {
+						console.log('SUCCESS!');
+					}, function (error) {
+						console.log('FAILED...', error);
+					});
+
+				let form = document.getElementById('form');
+				form.innerHTML = '<div class="form-submit"><div>Message Sent Successfully,<br/> you will hear back ASAP!</div></div>';
+
+			});
+		}
+
+		const images = document.querySelectorAll('.fade-in');
+
+		const options = {
+			threshold: 0.1, // Percentage of the image visible in the viewport
+		};
+
+		const observer = new IntersectionObserver((entries, observer) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					entry.target.style.opacity = 1;
+					observer.unobserve(entry.target);
+				}
+			});
+		}, options);
+
+		images.forEach((image) => {
+			observer.observe(image);
+		});
+
+	</script>
+
+</body>
+
+</html>
