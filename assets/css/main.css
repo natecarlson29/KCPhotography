@@ -1303,6 +1303,7 @@ button:active,
 		height: 100%;
 		outline: 0;
 		border: 0;
+		background: url('images/menu.svg');
 	}
 
 	#headerToggle .toggle:before {
@@ -1320,7 +1321,7 @@ button:active,
 
 	#headerToggle .toggle:before {
 		text-decoration: none;
-		content: '\f0c9';
+		content: '≡';
 		color: #fff;
 		font-size: 18px;
 		background: rgba(128, 136, 144, 0.5);
