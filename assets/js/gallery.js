@@ -111,9 +111,9 @@ document.addEventListener('touchend', function (event) {
     // Check if the swipe distance exceeds the threshold for left or right swipe
     if (swipeDistance > swipeThreshold) {
         // Right swipe detected
-        changeImage(1);
+        changeImage(-1);
     } else if (swipeDistance < -swipeThreshold) {
         // Left swipe detected
-        changeImage(-1);
+        changeImage(1);
     }
 });
