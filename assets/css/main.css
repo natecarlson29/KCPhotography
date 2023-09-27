@@ -143,6 +143,7 @@ textarea {
 	border-radius: 5px;
 	border: none;
 	cursor: pointer;
+	z-index: 99999999;
 }
 
 .filter-container {
