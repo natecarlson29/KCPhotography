@@ -180,6 +180,31 @@ textarea {
 
 /* Nate */
 
+.item img:hover {
+	cursor: pointer;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+/* Styles for each section (Seniors, Weddings, Couples) */
+.section {
+	flex: 1;
+	text-align: center;
+	margin: 5px;
+}
+
+/* Styles for images */
+.section img {
+	max-width: 100%;
+	height: auto;
+	margin-top: 10px;
+}
+
 .visible {
 	opacity: 1 !important;
 }
@@ -1239,7 +1264,7 @@ button:active,
 	}
 
 	.container {
-		padding: 0 2em 0 2em;
+		padding: 0 15px 0 15px;
 	}
 
 	/* Item */
@@ -1379,11 +1404,19 @@ button:active,
 	}
 
 	#main>section {
-		padding: 3em 0;
+		padding: 1em 0;
 	}
 
 	#main section.cover {
 		padding: 4em 0;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	.item header h3 {
+		font-size: 1rem;
 	}
 
 }
