@@ -180,8 +180,26 @@ textarea {
 
 /* Nate */
 
+section h2 {
+	background: #f7e9db;
+	padding: 5px;
+	margin: 15px 0px 0px 0px;
+}
+
+.item img {
+	border: 1px solid transparent;
+	/* Create a transparent 1px border */
+	padding: 10px;
+	/* Add padding to create the inset effect */
+	box-sizing: border-box;
+	border-color: white;
+}
+
 .item img:hover {
 	cursor: pointer;
+	/* outline: 5px solid red; */
+	border-color: gold;
+	box-shadow: inset white 10px 10px 4px;
 }
 
 .flex-container {
@@ -191,11 +209,23 @@ textarea {
 	align-items: flex-start;
 }
 
+.flex-container-col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#form input,
+#form textarea {
+	margin: 10px;
+}
+
 /* Styles for each section (Seniors, Weddings, Couples) */
 .section {
 	flex: 1;
 	text-align: center;
-	margin: 5px;
+	margin: 35px;
 }
 
 /* Styles for images */
@@ -236,12 +266,12 @@ textarea {
 
 .slide1 {
 	background: url('../../images/image2.jpeg') center center no-repeat fixed;
-	background-size: contain;
+	background-size: cover;
 }
 
 .slide2 {
 	background: url('../../images/image3.jpeg') center center no-repeat fixed;
-	background-size: contain;
+	background-size: cover;
 }
 
 .header-text {
@@ -272,6 +302,7 @@ textarea {
 
 .mySlides {
 	display: none;
+	height: 100vh;
 }
 
 .fade {
@@ -1417,6 +1448,31 @@ button:active,
 
 	.item header h3 {
 		font-size: 1rem;
+	}
+
+	.section {
+		margin: 5px;
+	}
+
+	.prev-button,
+	.next-button {
+		font-size: 2rem;
+	}
+
+	.preview-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+		gap: 10px;
+		justify-items: center;
+		align-items: start;
+		max-width: 90%;
+		max-height: 300px;
+	}
+
+	.preview {
+		width: 50px;
+		height: 50px;
+		cursor: pointer;
 	}
 
 }
