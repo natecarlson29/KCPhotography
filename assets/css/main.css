@@ -188,9 +188,7 @@ section h2 {
 
 .item img {
 	border: 1px solid transparent;
-	/* Create a transparent 1px border */
 	padding: 10px;
-	/* Add padding to create the inset effect */
 	box-sizing: border-box;
 	border-color: white;
 }
@@ -1446,6 +1444,10 @@ button:active,
 		font-size: 16px;
 	}
 
+	.item img {
+		padding: 2px;
+	}
+
 	.item header h3 {
 		font-size: 1rem;
 	}
@@ -1473,6 +1475,16 @@ button:active,
 		width: 50px;
 		height: 50px;
 		cursor: pointer;
+	}
+
+	.button {
+		padding: .3em 1.25em .3em 1.25em !important;
+		font-size: 14pt;
+	}
+
+	input,
+	textarea {
+		font-size: 12pt;
 	}
 
 }
