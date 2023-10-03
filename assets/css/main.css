@@ -274,7 +274,7 @@ section h2 {
 }
 
 .slide2 {
-	background: url('../../images/image3.jpeg') center center no-repeat fixed;
+	background: url('../../images/image3.jpeg');
 	background-size: cover;
 }
 
