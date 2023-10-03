@@ -69,11 +69,26 @@ function closeAlert() {
     html.style.overflow = "auto";
 }
 
-function openGallery() {
+function openGallery(e) {
     const galleryContainer = document.getElementById("gallery-container");
     const html = document.getElementById("html");
     html.style.overflow = "hidden"
     galleryContainer.style.display = "flex";
+
+    //If image clicked
+    if (e) {
+        let preview = null;
+        for (let i = 0; i < previews.length; i++) {
+            if (previews[i].src === e.src) {
+                currentIndex = i;
+                preview = previews[i]; // Return the element with the matching id
+            }
+        }
+        mainImage.src = e.src;
+        removeAllClass('selected-image');
+        preview.classList.add('selected-image');
+        preview.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+    }
 }
 
 document.addEventListener('keydown', function (event) {

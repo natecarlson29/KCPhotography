@@ -72,7 +72,7 @@ textarea {
 }
 
 .selected-image {
-	outline: 4px dashed rgb(240, 90, 90) !important;
+	outline: 2px dashed rgb(240, 90, 90) !important;
 }
 
 #close-button {
@@ -119,7 +119,7 @@ textarea {
 }
 
 .preview:hover {
-	outline: rgb(240, 90, 90) solid 3px;
+	outline: rgb(240, 90, 90) solid 1px;
 }
 
 .main-image-container {
@@ -179,6 +179,11 @@ textarea {
 }
 
 /* Nate */
+
+.about-container {
+	float: left;
+	margin-right: 20px;
+}
 
 section h2 {
 	background: #f7e9db;
@@ -264,7 +269,7 @@ section h2 {
 
 .slide1 {
 	background: url('../../images/image2.jpeg') center center no-repeat fixed;
-	background-size: cover;
+	background-size: auto;
 }
 
 .slide2 {
@@ -1463,7 +1468,7 @@ button:active,
 
 	.preview-container {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
 		gap: 10px;
 		justify-items: center;
 		align-items: start;
@@ -1472,8 +1477,8 @@ button:active,
 	}
 
 	.preview {
-		width: 50px;
-		height: 50px;
+		width: 70px;
+		height: 70px;
 		cursor: pointer;
 	}
 
@@ -1485,6 +1490,12 @@ button:active,
 	input,
 	textarea {
 		font-size: 12pt;
+	}
+
+	.about-container {
+		width: 100%;
+		margin: auto;
+		float: none;
 	}
 
 }
