@@ -268,8 +268,8 @@ section h2 {
 }
 
 .slide1 {
-	background: url('../../images/image2.jpeg') center center no-repeat fixed;
-	background-size: auto;
+	/* background: url('../../images/image2.jpeg') center center no-repeat fixed; */
+	background-image: url('../../images/image2.jpeg');
 }
 
 .slide2 {
