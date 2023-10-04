@@ -269,13 +269,13 @@ section h2 {
 
 .slide1 {
 	/* background: url('../../images/image2.jpeg') center center no-repeat fixed; */
-	background-image: url('../../images/image2.jpeg');
-	background-size: cover;
+	background: url('../../images/image2.jpeg') fixed;
+	/* background-size: contain; */
 }
 
 .slide2 {
-	background: url('../../images/image3.jpeg');
-	background-size: cover;
+	background: url('../../images/image3.jpeg') center center fixed;
+	/* background-size: contain; */
 }
 
 .header-text {
@@ -1408,6 +1408,7 @@ button:active,
 
 	#footer {
 		margin-left: 0px;
+		font-size: .8rem;
 	}
 
 	/* Main */
