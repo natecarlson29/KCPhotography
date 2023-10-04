@@ -270,12 +270,12 @@ section h2 {
 .slide1 {
 	/* background: url('../../images/image2.jpeg') center center no-repeat fixed; */
 	background: url('../../images/image2.jpeg') fixed;
-	/* background-size: contain; */
+	background-size: contain;
 }
 
 .slide2 {
 	background: url('../../images/image3.jpeg') center center fixed;
-	/* background-size: contain; */
+	background-size: contain;
 }
 
 .header-text {
