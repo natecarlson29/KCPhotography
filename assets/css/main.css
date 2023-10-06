@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 
-body {
+html {
 	line-height: 1;
 	font-family: 'Raleway', Tahoma, Geneva, Verdana, sans-serif !important;
 }
@@ -186,9 +186,17 @@ textarea {
 }
 
 section h2 {
-	background: #f7e9db;
-	padding: 5px;
+	/* background: #f7e9db; */
+	padding: 0px;
 	margin: 15px 0px 0px 0px;
+	font-weight: bold;
+	font-size: 2.5rem;
+}
+
+section hr {
+	margin: 10px 15px -20px 15px;
+	border-color: #8ebebc;
+	border-width: 2px;
 }
 
 .item img {
@@ -217,6 +225,10 @@ section h2 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+#form {
+	margin-top: -25px;
 }
 
 #form input,
