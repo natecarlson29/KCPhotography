@@ -281,12 +281,12 @@ section hr {
 
 .slide1 {
 	/* background: url('../../images/image2.jpeg') center center no-repeat fixed; */
-	background: url('../../images/pic04.jpg') center center no-repeat fixed;
+	background: url('../../images/image2.jpeg') center center no-repeat fixed;
 	background-size: contain;
 }
 
 .slide2 {
-	background: url('../../images/pic07.jpg') center center no-repeat fixed;
+	background: url('../../images/image3.png') center center no-repeat fixed;
 	background-size: cover;
 }
 
