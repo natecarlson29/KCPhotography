@@ -286,8 +286,8 @@ section hr {
 }
 
 .slide2 {
-	background: url('../../images/image3.png') no-repeat scroll;
-	background-size: contain;
+	background: url('../../images/image3.png') center center no-repeat scroll;
+	background-size: cover;
 }
 
 .header-text {
@@ -1504,9 +1504,9 @@ button:active,
 		float: none;
 	}
 
-	.slide1,
+	/* .slide1,
 	.slide2 {
 		background-size: contain;
-	}
+	} */
 
 }
